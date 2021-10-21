@@ -78,7 +78,7 @@ function SendingWishes() {
         <div className="flex flex-col w-auto h-auto space-y-2 py-2 items-center">
           <text className="font-sans md:text-xl text-sm  italic">Pesan</text>
           <textarea
-            className="md:w-xl h-48 border-gray-200 border-2 font-sansLight text-xl  pt-2 items-justify rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent"
+            className="md:w-xl h-48 px-4 border-gray-200 border-2 font-sansLight text-xl  pt-2 items-justify rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent"
             value={message}
             onChange={handleInputMessageChange}
             maxLength="250"

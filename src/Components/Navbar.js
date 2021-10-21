@@ -207,16 +207,16 @@ const Navbar = ({ toggle }) => {
             duration={1000}
             className="text-base font-sansLight text-black cursor-pointer"
           >
-            Waktu
+            Waktu dan Lokasi
           </Link>
-          <Link
+          {/* <Link
             to="pemberkatan"
             smooth={true}
             duration={1000}
             className="text-base font-sansLight text-black cursor-pointer"
           >
             Lokasi
-          </Link>
+          </Link> */}
           <Link
             to="kado"
             smooth={true}

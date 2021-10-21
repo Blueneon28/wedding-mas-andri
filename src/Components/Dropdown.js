@@ -17,16 +17,16 @@ const Dropdown = ({ isOpen, toggle }) => {
         duration={1000}
         className="text-xs font-sansLight text-black cursor-pointer pt-2"
       >
-        Waktu
+        Waktu dan Lokasi
       </Link>
-      <Link
+      {/* <Link
         to="pemberkatan"
         smooth={true}
         duration={1000}
         className="text-xs font-sansLight text-black cursor-pointer"
       >
         Lokasi
-      </Link>
+      </Link> */}
       <Link
         to="kado"
         smooth={true}
