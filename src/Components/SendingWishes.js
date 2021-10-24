@@ -8,6 +8,7 @@ import axios from "axios";
 function SendingWishes() {
   const [name, setNama] = useState("");
   const [message, setMessage] = useState("");
+  const [count, setCount] = useState(0);
   const [tempelate, setTempelate] = useState("1");
   useEffect(() => {
     console.log("first 1");
@@ -26,6 +27,7 @@ function SendingWishes() {
   const handleInputMessageChange = (e) => {
     // const temp = e.target.value
     setMessage(e.target.value);
+    setCount(e.target.value.length);
     // console.log(message);
   };
   async function PostWishes() {
@@ -60,7 +62,7 @@ function SendingWishes() {
   //   };
   return (
     <div
-      className="flex md:w-full md:h-full justify-center items-center py-20"
+      className="flex md:w-full md:h-full justify-center items-center"
       id="kirim-ucapan"
     >
       <div className="flex flex-col w-9/12 h-full justify-center items-center">
@@ -83,6 +85,7 @@ function SendingWishes() {
             onChange={handleInputMessageChange}
             maxLength="250"
           ></textarea>
+          <p className="font-sans text-xs italic">{count}/250</p>
         </div>
         <div className="flex flex-col w-full h-auto px-8 items-center py-2 space-y-4">
           <text className="font-sans md:text-xl text-sm italic ">

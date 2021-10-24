@@ -4,10 +4,6 @@ import { Carousel } from "react-responsive-carousel";
 import axios from "axios";
 
 function Wishes() {
-  // var typeCard;
-  // var messageCard;
-  // var nameCard;
-  // var temp;
   const [rows, setData] = useState([]);
   const GetData = () => {
     axios
@@ -47,11 +43,11 @@ function Wishes() {
 
   return (
     <div className="sm:flex flex-col w-full h-full justify-center items-center py-8">
-      <div className="flex flex-col w-full h-full justify-center items-center md:px-24 px-5">
+      <div className="flex flex-col w-full h-full justify-center items-center md:px-24">
         <text className="py-8 font-script sm:text-4xl font-bold">
           Ucapan dan Doa Anda
         </text>
-        <div className=" w-full h-full">
+        <div className="w-full h-full md:hidden">
           <Carousel
             className="h-location"
             dynamicHeight={false}
@@ -60,32 +56,29 @@ function Wishes() {
             selectedItem={3}
             centerMode={true}
             showStatus={false}
-            showIndicators={true}
-            // {md=on ? centerSlidePercentage={98} : centerSlidePercentage={33}
-            // }
-            centerSlidePercentage={33}
-            showThumbs={false}
-          >
-            {renderWishesCard()}
-          </Carousel>
-        </div>
-        {/* <div className="md:hidden w-full h-full">
-          <Carousel
-            className="h-location"
-            width={360}
-            dynamicHeight={false}
-            autoPlay
-            infiniteLoop
-            // selectedItem={3}
-            centerMode={true}
-            showStatus={false}
-            showIndicators={true}
+            showIndicators={false}
             centerSlidePercentage={95}
             showThumbs={false}
           >
             {renderWishesCard()}
           </Carousel>
-        </div> */}
+        </div>
+        <div className="w-full h-full">
+          <Carousel
+            className="h-location"
+            dynamicHeight={false}
+            autoPlay
+            infiniteLoop
+            selectedItem={3}
+            centerMode={true}
+            showStatus={false}
+            showIndicators={false}
+            centerSlidePercentage={32.8}
+            showThumbs={false}
+          >
+            {renderWishesCard()}
+          </Carousel>
+        </div>
       </div>
     </div>
   );

@@ -6,15 +6,14 @@ import CountUp from "react-countup";
 function Landing() {
   return (
     <div className="flex flex-col w-full h-full justify-center items-center md:px-24">
-      <audio
+      {/* <audio
         className="justify-center items-left"
         autoPlay
         loop
-        /*controls*/ muted
-      >
-        {/* <source src={Song} /> */}
-      </audio>
-      <div className="flex flex-col md:w-full w-full md:h-hero h-60 bg-landing-image text-white bg-cover md:bg-auto md:space-y-8 py-2 overflow-hidden">
+      > */}
+      {/* <source src={Song} /> */}
+      {/* </audio> */}
+      <div className="flex flex-col md:w-full w-full md:h-hero h-60 bg-landing-image text-white bg-cover py-2 overflow-hidden">
         <div className="flex flex-row md:w-full w-full h-auto md:space-x-8 space-x-4 justify-center items-center md:pt-12">
           <div className="md:w-48 w-20 h-0 border-2 bg-white"></div>
           <h1 className="font-sans md:text-2xl text-xs font-bold">

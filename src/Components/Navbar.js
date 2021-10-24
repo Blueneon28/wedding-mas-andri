@@ -331,7 +331,7 @@ const Navbar = ({ toggle }) => {
                     <div className="mt-3 text-center lg:mt-0 lg:text-center py-8 justify-center items-center space-y-2">
                       {openInput && (
                         <div className="flex flex-col justify-center items-center space-y-4 ">
-                          <div className=" flex-grow-0 overflow-y-auto md:w-24 md:h-20 bg-chocolate text-white justify-center items-center rounded-full -mt-36">
+                          <div className="flex-grow-0 overflow-y-auto md:w-24 md:h-20 text-white justify-center items-center rounded-full -mt-16">
                             <img src={IconInv} alt="Tanda" />
                           </div>
 
@@ -345,7 +345,7 @@ const Navbar = ({ toggle }) => {
                           </Dialog.Title>
                           <div className="mt-2 flex flex-row items-center pt-4 md:px-8 px-0">
                             <input
-                              className="md:w-full w-80 md:h-16 h-12 border border-gray-300 justify-center text-center items-center md:text-2xl text-sm"
+                              className="md:w-full w-auto md:h-16 h-12 border border-gray-300 justify-center text-center items-center md:text-2xl text-sm"
                               type="text"
                               value={textData}
                               onChange={handleChange}

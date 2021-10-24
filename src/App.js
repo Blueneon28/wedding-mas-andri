@@ -13,6 +13,7 @@ import Footer from "./Components/Footer";
 import { React, useState, useEffect } from "react";
 import Navbar from "./Components/Navbar";
 import Dropdown from "./Components/Dropdown";
+import ModalWelcome from "./Components/ModalWelcome";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ function App() {
   });
   return (
     <>
+      <ModalWelcome />
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Landing />

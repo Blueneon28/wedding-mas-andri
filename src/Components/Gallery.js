@@ -11,14 +11,14 @@ import Gambar6 from "../Images/Rectangle 24.png";
 function Gallery() {
   return (
     <div
-      className="flex md:w-full md:h-full justify-center items-center md:py-24 pb-14 overflow-auto"
+      className="flex md:w-full md:h-full justify-center items-center md:py-4 pb-14 overflow-auto"
       id="gallery"
     >
       <div className="flex flex-col w-full h-full justify-center items-center md:px-24 px-0">
         <text className="font-script md:text-4xl text-lg font-bold">
           Galeri Foto Kami
         </text>
-        <div className="flex md:flex-row flex-col md:w-full w-11/12 h-full justify-center items-center py-8 md:space-y-0 space-y-4">
+        <div className="flex md:flex-row flex-col md:w-full w-11/12 h-full justify-center items-center py-4 md:space-y-0 space-y-4">
           <div className="flex flex-col w-auto h-auto space-y-2 pb-2">
             <div>
               <img src={Gambar1} alt="card 1"></img>
