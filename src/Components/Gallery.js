@@ -15,7 +15,7 @@ function Gallery() {
       id="gallery"
     >
       <div className="flex flex-col w-full h-full justify-center items-center md:px-24 px-0">
-        <text className="font-script md:text-4xl text-lg font-bold">
+        <text className="font-script md:text-4xl text-xl font-bold">
           Galeri Foto Kami
         </text>
         <div className="flex md:flex-row flex-col md:w-full w-11/12 h-full justify-center items-center py-4 md:space-y-0 space-y-4">

@@ -14,7 +14,7 @@ function Pemberkatan() {
   // };
   return (
     // <div className='flex w-full h-full justify-center items-center py-4'>
-    <div className="flex md:flex-row flex-col w-full h-full justify-center items-center py-4 space-x-2 md:px-24">
+    <div className="flex md:flex-row flex-col w-full h-full justify-center items-center text-center py-4 space-x-2 md:px-24">
       <div className="flex md:w-full w-full h-full">
         <img src={Curch} alt="Place" />
       </div>

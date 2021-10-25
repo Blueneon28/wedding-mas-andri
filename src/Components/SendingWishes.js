@@ -66,7 +66,7 @@ function SendingWishes() {
       id="kirim-ucapan"
     >
       <div className="flex flex-col w-9/12 h-full justify-center items-center">
-        <text className="py-8 font-script md:text-4xl text-lg font-bold">
+        <text className="py-8 font-script md:text-4xl text-xl font-bold">
           Kirim Ucapan Untuk Kami
         </text>
         <div className="flex flex-col w-auto h-auto space-y-2 py-2 items-center">
@@ -147,9 +147,9 @@ function SendingWishes() {
             </div>
           </div>
         </div>
-        <div className="sm:flex md::w-auto md::h-auto py-10">
+        <div className="sm:flex md:w-full md:h-auto py-10">
           <button
-            className="md::w-xl w-64 md:h-12 h-14 bg-chocolate text-white justify-center items-center rounded-md font-sansLight md:text-xl md:text-xl text-sm"
+            className="md:w-screen w-64 md:h-12 h-14 bg-chocolate text-white justify-center items-center rounded-md font-sansLight md:text-xl md:text-xl text-sm"
             onClick={PostWishes}
           >
             Kirim

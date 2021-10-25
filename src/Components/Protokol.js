@@ -10,7 +10,7 @@ import NoGroup from "../Images/NOGROUP 1.png";
 function Protokol() {
   return (
     <div
-      className="flex flex-col md:w-full md:h-full justify-center items-center mt-12 py-8 bg-protokol-image bg-cover"
+      className="flex flex-col md:w-full md:h-full justify-center items-center mt-4 bg-protokol-image bg-cover"
       id="protokol"
     >
       <div className="flex flex-col md:w-full w-screen h-full justify-center items-center bg-transparent md:px-24 px-5">

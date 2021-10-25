@@ -50,9 +50,8 @@ const Navbar = ({ toggle }) => {
     } else {
       alert("Hanya bisa memasukkan angka saja!");
     }
-    console.log(textData);
+    // console.log(textData);
   };
-  // let textID;
   const GetID = () => {
     let textCode = textData;
     if (textCode === "") {
@@ -259,8 +258,8 @@ const Navbar = ({ toggle }) => {
           </button>
         </div>
       </div>
-      <div className="md:hidden flex w-full h-20 py-5 pb-10 pt-4 justify-center items-center space-x-20">
-        <div className="cursor-pointer md:hidden pr-5" onClick={toggle}>
+      <div className="md:hidden flex w-full h-20 py-12 px-4 justify-center items-center space-x-8">
+        <div className="cursor-pointer md:hidden mr-20" onClick={toggle}>
           <svg
             class="w-6 h-6"
             fill="none"
@@ -276,10 +275,10 @@ const Navbar = ({ toggle }) => {
             ></path>
           </svg>
         </div>
-        <div className="md:hidden w-16 h-12 justify-start items-center">
+        <div className="md:hidden w-28 h-28 justify-center items-center mt-16">
           <img src={IconInvM} alt="Tanda" />
         </div>
-        <div className="md:hidden w-24 h-9 justify-center items-center">
+        <div className="md:hidden w-24 h-9 ml-8 justify-center items-center">
           <button
             className="flex w-full h-full justify-center text-xs font-sansLight items-center rounded-md bg-chocolate text-white"
             onClick={togglePopup}
@@ -325,37 +324,37 @@ const Navbar = ({ toggle }) => {
               leaveFrom="opacity-100 translate-y-0 lg:scale-100"
               leaveTo="opacity-0 translate-y-4 lg:translate-y-0 lg:scale-95"
             >
-              <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all lg:my-8 lg:align-middle lg:max-w-2xl lg:w-full">
-                <div className="bg-white md:px-24 pt-5 pb-4 lg:p-6 lg:pb-4 justify-center items-center">
+              <div className="inline-block align-center text-left shadow-xl transform transition-all lg:my-8 lg:align-middle lg:max-w-2xl lg:w-full">
+                <div className="bg-white w-80 md:w-full p-3 md:px-24 pt-10 pb-4 justify-center items-center rounded-3xl">
                   <div className="lg:flex lg:items-center justify-center">
                     <div className="mt-3 text-center lg:mt-0 lg:text-center py-8 justify-center items-center space-y-2">
                       {openInput && (
-                        <div className="flex flex-col justify-center items-center space-y-4 ">
-                          <div className="flex-grow-0 overflow-y-auto md:w-24 md:h-20 text-white justify-center items-center rounded-full -mt-16">
+                        <div className="flex flex-col justify-center items-center space-y-2 md:p-3">
+                          <div className="bg-white w-16 md:w-24 h-14 md:h-20 p-2 md:p-2.5 text-white justify-center items-center rounded-full align-center mb-8 -mt-20 md:-mt-28">
                             <img src={IconInv} alt="Tanda" />
                           </div>
 
                           <Dialog.Title
                             as="h1"
-                            className="md:text-base text-xs font-sans leading-6 font-sans justify-center items-center md:px-4 px-4"
+                            className="md:text-base text-xs font-sans leading-6 font-sans justify-center items-center px-2"
                           >
-                            Silahkan masukkan Nomor Handphone kalian untuk
-                            membuka QR Code yang di gunakan untuk masuk pada
-                            Hari Pernikahan
+                            Silahkan masukkan nomor handphone Anda untuk
+                            mendapatkan kode QR :
                           </Dialog.Title>
-                          <div className="mt-2 flex flex-row items-center pt-4 md:px-8 px-0">
+                          <div className="mt-2 w-full flex flex-row items-center pt-4 md:px-8 px-4">
                             <input
-                              className="md:w-full w-auto md:h-16 h-12 border border-gray-300 justify-center text-center items-center md:text-2xl text-sm"
+                              className="md:w-full w-full md:h-16 h-12 border border-gray-300 justify-center items-center text-left md:text-2xl text-sm px-4"
                               type="text"
                               value={textData}
                               onChange={handleChange}
                             ></input>
                           </div>
-                          <div className="font-sans text-xs text-gray-400 font-light text-justify px-8">
+                          <div className="font-sans text-xs text-gray-400 font-light text-justify px-4 mt-3">
                             <p>
-                              * Nomor handphone kamu tidak akan kami sebarkan.
-                              Nomor handphone hanya untuk membuka QR Code di
-                              hari Pernikahan kami.
+                              * Nomor handphone Anda hanya akan digunakan untuk
+                              kepentingan mendapatkan kode QR. Kode QR akan
+                              digunakan sebagai pengganti buku tamu pada hari
+                              pernikahan.
                             </p>
                           </div>
                           {openSubmit && (
@@ -372,17 +371,21 @@ const Navbar = ({ toggle }) => {
                       )}
                       {openQR && (
                         <div className="flex flex-col w-auto h-auto md:px-8 px-0 justify-center items-center">
+                          <div className="bg-white w-16 md:w-24 h-14 md:h-20 p-2 md:p-2.5 text-white justify-center items-center rounded-full align-center mb-8 -mt-20 md:-mt-24">
+                            <img src={IconInv} alt="Tanda" />
+                          </div>
                           {openScanned && (
-                            <div className="flex flex-col w-auto h-auto px-8 justify-center items-center">
+                            <div className="flex flex-col w-auto h-auto justify-center items-center">
                               <div className="w-auto h-auto">
                                 <img src={IconScanned} alt="scanned" />
                               </div>
-                              <div className="flex flex-col w-auto h-auto justify-center items-center space-y-4 py-4">
-                                <h1 className="font-sans text-black text-2xl">
+                              <div className="flex flex-col w-auto h-auto justify-center items-center space-y-4">
+                                <h1 className="font-sans text-black text-xl md:text-2xl">
                                   Selamat Datang
                                 </h1>
-                                <p className="font-sans text-base text-black">
-                                  Terima kasih, telah menghadiri pernikahan kami{" "}
+                                <p className="font-sans text-xs md:text-base text-black">
+                                  Selamat, Anda telah berhasil mendapatkan Kode
+                                  QR! Sampai Jumpa di pernikahan kami!
                                 </p>
                                 {/* <p className='font-sansLight text-base text-black'>QR CODE SOUVENIR</p> */}
                                 {/* <QRCode value={textQR.toString()} /> */}
@@ -404,7 +407,7 @@ const Navbar = ({ toggle }) => {
                           )}
                           {openErr && (
                             <div className="flex flex-col w-auto h-auto justify-center items-center">
-                              <p className="font-sans font-light text-red-500 text-xs md:px-0 px-4">
+                              <p className="font-sans font-light text-red-500 text-xs text-left md:px-24 px-4">
                                 * Nomor handphone kamu salah atau tidak
                                 terdaftar di sistem kami. Jika kalian telah
                                 mendapatkan undangan tetapi nomor handphone

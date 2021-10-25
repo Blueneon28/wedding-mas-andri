@@ -12,11 +12,11 @@ function Kado() {
   // copied = false;
   return (
     <div
-      className="flex flex-col w-full h-full justify-center items-center py-4 md:px-24 px-5"
+      className="flex flex-col w-full h-full justify-center items-center md:px-24 px-5"
       id="kado"
     >
       <div className="flex flex-col w-auto h-auto py-8 md:px-60 justify-center items-center text-center">
-        <text className="py-8 font-script md:text-4xl text-lg font-bold text-center">
+        <text className="py-4 font-script md:text-4xl text-2xl font-bold text-center">
           Kado Pernikahan
         </text>
         <text className="font-sansLight md:text-lg text-xs">

@@ -3,7 +3,7 @@ import Gambar1 from "../Images/Seijin Tuhan.png";
 
 function CurchQuotes() {
   return (
-    <div className="flex w-full py-8 h-full" id="curchquotes">
+    <div className="flex w-full h-full" id="curchquotes">
       <div className="flex md:flex-row flex-col w-full h-full justify-center items-center md:py-24 py-8 md:px-24 md:space-x-8 space-x-0 space-y-8">
         <div className="flex md:w-full w-80 h-full justify-center items-center">
           <img src={Gambar1} alt="curch"></img>
@@ -15,7 +15,7 @@ function CurchQuotes() {
             </h1>
             <div className="flex w-20 border border-yellow-700 "></div>
           </div>
-          <p className=" font-sansLight text-gray-300 py-2 md:text-xl text-xs">
+          <p className=" font-sansLight text-gray-400 py-2 md:text-xl text-xs">
             Sebab pada awal dunia, Allah menjadikan mereka laki-laki dan
             perempuan, sebab itu laki-laki akan meninggalkan ayahnya dan ibunya
             dan bersatu dengan istrinya, sehingga keduanya itu menjadi satu

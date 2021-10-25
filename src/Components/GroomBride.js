@@ -15,7 +15,7 @@ function GroomBride() {
           </text>
         </div>
         <div className="flex flex-col md:w-full w-full h-full py-8 justify-center items-center">
-          <div className="md:w-full w-80 md:h-full h-40 rounded-xl">
+          <div className="md:h-full h-40 rounded-xl">
             <img src={Gambar} alt="groom bride"></img>
           </div>
           <div className="flex md:flex-row flex-col md:py-8 pb-8 md:space-x-12 justify-center items-center">

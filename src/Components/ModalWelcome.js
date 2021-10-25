@@ -9,9 +9,6 @@ export default function ModalWelcome() {
     setIsOpen(false);
   }
 
-  function openModal() {
-    setIsOpen(true);
-  }
   const cancelButtonRef = useRef(null);
 
   return (
@@ -52,30 +49,33 @@ export default function ModalWelcome() {
               leaveFrom="opacity-100 translate-y-0 lg:scale-100"
               leaveTo="opacity-0 translate-y-4 lg:translate-y-0 lg:scale-95"
             >
-              <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all lg:my-8 lg:align-middle lg:max-w-2xl lg:w-full px-4">
-                <div className="bg-white md:px-24 pt-5 pb-4 lg:p-6 lg:pb-4 justify-center items-center">
+              <div className="inline-block align-center text-left shadow-xl transform transition-all lg:my-8 lg:align-middle lg:max-w-2xl lg:w-full px-4">
+                <div className="bg-white w-80 md:w-full p-3 md:px-24 pt-10 pb-4 justify-center items-center rounded-3xl">
                   <div className="lg:flex lg:items-center justify-center">
                     <div className="mt-3 text-center lg:mt-0 lg:text-center py-8 justify-center items-center space-y-2">
-                      <div className="flex flex-col justify-center items-center space-y-4">
-                        <div className="flex-grow-0 overflow-y-auto md:w-24 md:h-20 text-white justify-center items-center rounded-full -mt-16">
+                      <div className="flex flex-col justify-center items-center space-y-2 md:p-3">
+                        <div className="bg-white w-16 md:w-24 h-14 md:h-20 p-2 md:p-2.5 text-white justify-center items-center rounded-full align-center mb-8 -mt-20 md:-mt-28">
                           <img src={IconInv} alt="Tanda" />
                         </div>
 
                         <Dialog.Title
                           as="h1"
-                          className="md:text-base text-xs font-sans leading-6 font-sans justify-center items-center md:px-4 px-4"
+                          className="md:text-base text-sm font-sans leading-6 font-sans justify-center items-center md:px-4"
                         >
                           Selamat datang di website Pernikahan Sara & Kelvin
                         </Dialog.Title>
-                        <div className="mt-2 items-center pt-4 md:px-8 px-0 text-left">
-                          <p className="text-sm text-gray-500">
+                        <div className="mt-2 items-center pt-4 md:px-4 px-0 text-left">
+                          <p className="md:text-sm text-xs text-gray-500">
                             Apabila Anda dapat hadir pada acara pernikahan kami
                             (21 November 2021), mohon ikuti{" "}
                             <u className="italic">Prosedur</u> berikut :
                             <p>1. Tekan tombol "Buka QR"</p>
                             <p>2. Masukkan Nomor Handphone Anda</p>
                             <p>
-                              3. Tunjukkan Kode QR pada hari pernikahan kepada
+                              3. Simpan kode QR yang Anda dapat (Screenshot)
+                            </p>
+                            <p>
+                              4. Tunjukkan Kode QR pada hari pernikahan kepada
                               petugas (sebagai pengganti buku tamu dan
                               pengambilan sovenir)
                             </p>

@@ -49,7 +49,7 @@ const Dropdown = ({ isOpen, toggle }) => {
         duration={1000}
         className="text-xs font-sansLight text-black cursor-pointer pb-2"
       >
-        Galeri Cinta
+        Galeri Foto
       </Link>
     </div>
   );
