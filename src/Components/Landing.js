@@ -1,11 +1,17 @@
 import { React } from "react";
 
-// import Song from '../Audio/Lagu Pernikahan Rohani - Kita Satu (Lyric Video).mp3'
+import Sound from "react-sound";
+import Song from "../Audio/Lagu Pernikahan Rohani - Kita Satu (Lyric Video).mp3";
 import CountUp from "react-countup";
 
 function Landing() {
   return (
     <div className="flex flex-col w-full h-full justify-center items-center md:px-24">
+      <Sound
+        url={Song}
+        playStatus={Sound.status.PLAYING}
+        playFromPosition={300}
+      />
       {/* <audio
         className="justify-center items-left"
         autoPlay

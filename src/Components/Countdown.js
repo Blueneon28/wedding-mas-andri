@@ -52,7 +52,7 @@ function Countdown() {
             <div className="md:w-48 w-14 h-0 border border-gray-300"></div>
           </div>
         </div>
-        <div className="flex flex-row w-auto h-auto space-x-4 justify-center items-center py-8">
+        <div className="flex flex-row w-auto h-auto space-x-4 md:space-x-8 justify-center items-center py-8">
           <div className="flex flex-col w-auto h-auto justify-center item-center md:space-y-4 space-y-2">
             <div className="flex flex-col md:w-36 md:h-36 w-16 h-14 bg-chocolate text-white justify-center items-center rounded-full">
               <text className="justify-center item-center font-sans md:text-3xl text-xl font-bold">

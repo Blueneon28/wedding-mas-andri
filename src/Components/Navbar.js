@@ -371,11 +371,11 @@ const Navbar = ({ toggle }) => {
                       )}
                       {openQR && (
                         <div className="flex flex-col w-auto h-auto md:px-8 px-0 justify-center items-center">
-                          <div className="bg-white w-16 md:w-24 h-14 md:h-20 p-2 md:p-2.5 text-white justify-center items-center rounded-full align-center mb-8 -mt-20 md:-mt-24">
-                            <img src={IconInv} alt="Tanda" />
-                          </div>
                           {openScanned && (
                             <div className="flex flex-col w-auto h-auto justify-center items-center">
+                              <div className="bg-white w-16 md:w-24 h-14 md:h-20 p-2 md:p-2.5 text-white justify-center items-center rounded-full align-center mb-8 -mt-20 md:-mt-24">
+                                <img src={IconInv} alt="Tanda" />
+                              </div>
                               <div className="w-auto h-auto">
                                 <img src={IconScanned} alt="scanned" />
                               </div>
