@@ -1,28 +1,13 @@
 import { React } from "react";
-
-import Sound from "react-sound";
-import Song from "../Audio/Lagu Pernikahan Rohani - Kita Satu (Lyric Video).mp3";
 import CountUp from "react-countup";
 
 function Landing() {
   return (
     <div className="flex flex-col w-full h-full justify-center items-center md:px-24">
-      <Sound
-        url={Song}
-        playStatus={Sound.status.PLAYING}
-        playFromPosition={300}
-      />
-      {/* <audio
-        className="justify-center items-left"
-        autoPlay
-        loop
-      > */}
-      {/* <source src={Song} /> */}
-      {/* </audio> */}
-      <div className="flex flex-col md:w-full w-full md:h-hero h-60 bg-landing-image text-white bg-cover py-2 overflow-hidden">
+      <div className="flex flex-col md:w-full w-full md:h-hero h-60 bg-landing-image bg-center text-white bg-cover py-2 overflow-hidden">
         <div className="flex flex-row md:w-full w-full h-auto md:space-x-8 space-x-4 justify-center items-center md:pt-12">
           <div className="md:w-48 w-20 h-0 border-2 bg-white"></div>
-          <h1 className="font-sans md:text-2xl text-xs font-bold">
+          <h1 className="font-sans md:text-2xl text-xs text-center font-bold">
             Perjalanan Cinta
           </h1>
           <div className="md:w-48 w-20 h-0 border-2 bg-white"></div>

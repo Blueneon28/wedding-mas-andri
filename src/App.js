@@ -14,12 +14,18 @@ import { React, useState, useEffect } from "react";
 import Navbar from "./Components/Navbar";
 import Dropdown from "./Components/Dropdown";
 import ModalWelcome from "./Components/ModalWelcome";
+import Sound from "react-sound";
+import Song from "./Audio/Lagu Pernikahan Rohani - Kita Satu (Lyric Video).mp3";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
+  };
+  const toggleMusic = () => {
+    setIsPlaying(!isPlaying);
   };
   useEffect(() => {
     const hideMenu = () => {
@@ -34,8 +40,14 @@ function App() {
     };
   });
   return (
-    <>
-      <ModalWelcome />
+    <div className="overflow-x-hidden">
+      <ModalWelcome toggle={toggleMusic} />
+      <Sound
+        url={Song}
+        playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
+        playFromPosition={300}
+        loop={true}
+      />
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Landing />
@@ -49,7 +61,7 @@ function App() {
       <SendingWishes />
       <Gallery />
       <Footer />
-    </>
+    </div>
   );
 }
 
