@@ -40,7 +40,7 @@ function Gallery() {
               />
             </div>
           </div>
-          <div className="md:hidden flex flex-row space-x-2 w-auto h-full">
+          <div className="md:hidden flex flex-row space-x-2 w-auto h-full items-center">
             <div>
               <ModalImage
                 small={Gambar2Res}
