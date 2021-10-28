@@ -36,7 +36,7 @@ function Countdown() {
   }, []);
   return (
     <div
-      className="md:flex md:w-full md:h-full justify-center items-center py-8"
+      className="md:flex md:w-full md:h-full justify-center items-center py-24"
       id="waktu"
     >
       <div className="flex flex-col w-full h-60 py-8 px-8 justify-center items-center space-y-2">
